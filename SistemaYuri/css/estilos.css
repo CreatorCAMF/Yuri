@@ -1,0 +1,46 @@
+table.table{
+    font-size:.8em;
+}
+
+table.table thead{
+    font-size:2.05em;
+}
+
+
+.azul{
+    background-color: #7ADAE6;
+    font-size: 1.5em;
+}
+
+table.table thead.blue{
+    background-color: #7ADAE6;
+    font-size: 1.3em;
+}
+
+
+.amarillo{
+    background-color: #DAE67A;
+    font-size: 1.1em;
+    
+}
+
+.naranja{
+    background-color: #E6BC73;
+    font-size: 2em;
+    
+}
+
+.verde{
+    background-color: #A4E67A;
+    font-size: 1.2em;   
+}
+
+.lila{
+    background-color: #E67ADA;
+    font-size: 1.3em;
+    
+}
+
+.rojo{
+     background-color: red;
+}

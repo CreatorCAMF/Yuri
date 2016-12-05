@@ -1,0 +1,79 @@
+Sistema Yuri
+
+Requisitos:
+
+    Dado un archivo excel el usuario podra consultar que profesores cumplen con las horas minimas establecidas para el seguimiento.
+    
+    El Reporte contendra lo siguiente.
+    
+        El sistema debera dividir a los profesores en escuelas (Preparatoria, Arquitectura e Ingieneria , Negocios y un extra para una profesora de lenguas)
+        
+        Despues se llevara a cabo otra subdivisión basado en si són Directores Academicos o sólo son profesores de planta.
+        
+        El sistema debera mostrar por profesor el  número de grupos, horas equivalentes, Unidades equivalentes, Alumnos equivalentes y grupos promedio.
+        
+        Una suma del número de grupos, horas equivalentes, Unidades equivalentes, Alumnos equivalentes y grupos promedio por subdivisión de Directores Academicos y profesores de planta.
+        
+        Una suma del número de grupos, horas equivalentes, Unidades equivalentes, Alumnos equivalentes y grupos promedio, por escuelas.
+
+        Una suma total del número de grupos, horas equivalentes, Unidades equivalentes, Alumnos equivalentes y grupos promedio, por la institución. 
+        
+        Una subdivisión para los profesores investigadores con los dato de número de grupos, horas equivalentes, Unidades equivalentes, Alumnos equivalentes y grupos promedio.
+        
+        Una subdivisión para los Profesores que no son considerados en el indicador por considerarse Auxiliares Planta	con los dato de número de grupos, horas equivalentes, Unidades equivalentes, Alumnos equivalentes y grupos promedio.
+        
+        El total de profesores de Preparatoria
+        
+        El total de profesores de profesional
+        
+        El total de profesores
+        
+        Porcentaje de profesores de Preparatoria con menos de su carga docente.
+        
+        Porcentaje de profesores de profesional con menos de su carga docente.
+        
+        Porcentaje de profesores con menos de su carga docente.
+        
+    Otras caracteristicas.
+    
+        Al dar click sobre un profesor se desplegara un la tabla mostrando la descripción de todos los grupos que lleva el profesor.	
+        
+        Todos los datos deben tener un redondeo de 2 digitos.
+        
+        En caso de que un profesor no cumpla con su carga docente, se debe poner el indicador en rojo.		
+
+
+
+Entradas:
+
+El sistema Yuri toma un archivo excel  como base. 
+
+El archivo debera tener la descripción de los grupos y los profesores que imparten las materias.
+
+Para la descripción de la clase el archivo tiene destinadas 35 columnas y 13 para cada profesor responsable
+
+Debido a que hay clases sin profesor la cantidad minima de columnas es de 35 lo que implica que la columna AI de excel sera la ultima en en la categoria 
+clase.
+
+Se debe filtrar el documento tomando en cuenta los siguientes aspectos.
+
+    Sólo se evaluaran profesores de planta.
+    
+    No se toman en cuenta los grupos donde el profesor no tenga responsabilidad.
+       
+    No se toman en cuenta materias en el extranjero.
+    
+    Materias cocurriculares con atributos (DAEC, CEAC, DAEE)
+    
+    Disciplinas con Materia (XA,XF,XR,YA,YC).
+    
+    Materias virtuales.
+    
+    Que tengan el atributo CSCA (ojo se debe tomar en cuenta sólo si tambien tiene CPAA).
+    
+    Que tenga el atributo WA (ojo se debe tomar en cuenta sólo si tambien tiene CPAA).
+    
+    No se toman en cuenta los  grupos con 0 alumnos excepto VLPC.
+    
+    No se toman en cuenta los grupos con 0 unidades.
+
